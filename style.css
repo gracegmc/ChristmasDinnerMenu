@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed background */
+body {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* background does not move  */
+  color: #ffffff;
+  overflow-y: auto;
+}
+
+/* Scrolling container */
+
+/* Menu structure */
+.menu {
+  min-height: 100vh;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.greeting {
+  margin-top: 80px;
+  color: black;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.credits {
+  color: black;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 18px;
+}
+
+.course {
+  margin-bottom: 40px;
+  padding: 24px 40px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* keep text colors */
+  display: block;        /* make entire area clickable */
+  cursor: pointer;
+}
+
+.course:hover {
+  /* background-color: rgba(211, 211, 211, 0.3);  */
+  border: 2px solid gold;
+}
+
+/* making the first container start lower / last container end earlier */
+.course:first-child {
+  margin-top: 120px; /* pushes menu content lower */
+}
+.course:last-child {
+  margin-bottom: 120px; /* pushes menu content lower */
+}
+
+.course-name {
+  color: black;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.course-ingredients {
+  color: gray;
+  font-family: "Luminari", cursive;
+  font-size: 18px;
+  line-height: 1.4;
+}
